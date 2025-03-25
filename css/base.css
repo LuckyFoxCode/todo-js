@@ -20,4 +20,5 @@
 body {
   background-color: var(--light);
   color: var(--black);
+  font-family: "Rubik", sans-serif;
 }
