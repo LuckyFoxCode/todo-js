@@ -9,6 +9,8 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+
+  --transition-all: all 0.3s ease-in-out;
 }
 
 * {
@@ -21,4 +23,5 @@ body {
   background-color: var(--light);
   color: var(--black);
   font-family: "Rubik", sans-serif;
+  font-size: 16px;
 }
