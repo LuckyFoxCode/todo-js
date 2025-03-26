@@ -3,8 +3,6 @@
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   max-width: 1440px;
   height: 100vh;
@@ -16,6 +14,7 @@
   padding: 1rem;
   gap: 1rem;
 }
+
 .app-header,
 .app-footer {
   flex-shrink: 0;
@@ -24,7 +23,24 @@
 .app-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-header-title {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(145deg, var(--primary), var(--warning));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.app-header-date {
+  font-size: 14px;
+  color: var(--secondary);
 }
 
 .app-main {
@@ -39,6 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: auto;
 }
 
 .app-footer-link,
@@ -57,14 +74,4 @@
 
 .app-footer-link:hover {
   color: var(--primary);
-}
-
-.todo-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--white);
-  border-radius: 0.5rem;
-  transition: var(--transition-all);
 }
