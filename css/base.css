@@ -20,8 +20,12 @@
 }
 
 body {
-  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--black);
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+  background-color: var(--light);
+  min-height: 100vh;
 }

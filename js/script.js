@@ -1,11 +1,12 @@
-import { App } from "./components/index.js";
+import { createApp } from "./components/index.js";
 
 function init() {
-  const container = document.createElement("div");
-  container.id = "app";
-  document.body.appendChild(container);
+  const root = document.querySelector("body");
+  root.innerHTML = "";
 
-  App();
+  const app = createApp();
+
+  root.append(app);
 }
 
 init();
